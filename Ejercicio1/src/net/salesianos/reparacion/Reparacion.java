@@ -12,4 +12,15 @@ public class Reparacion {
         this.descripcion = descripcion;
         this.urgente = urgente;
     }
+
+    public String getCodigo() { return codigo; }
+    public String getCliente() { return cliente; }
+    public String getDescripcion() { return descripcion; }
+    public boolean isUrgente() { return urgente; }
+
+    public void setCodigo(String codigo) { this.codigo = codigo; }
+    public void setCliente(String cliente) { this.cliente = cliente; }
+    public void setDescripcion(String descripcion) { this.descripcion = descripcion; }
+    public void setUrgente(boolean urgente) { this.urgente = urgente; }
+
 }
