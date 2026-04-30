@@ -1,18 +1,34 @@
-## Getting Started
+# Ejercicio 3 – Lectura de CSV y generación de informes
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+El objetivo es leer un fichero CSV con información de videojuegos, procesarlo y generar dos ficheros de salida.
 
-## Folder Structure
+## Contenido del proyecto
 
-The workspace contains two folders by default, where:
+- `App.java`: clase principal que lee el CSV y genera los informes.
+- `Videojuego.java`: clase que representa un videojuego con título, género y horas jugadas.
+- `videojuego.csv`: fichero con los datos del enunciado (ubicado en `src/net/salesianos/data/`).
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Qué hace el programa
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+1. Lee el fichero `videojuego.csv`.
+2. Ignora la primera línea (cabecera).
+3. Convierte cada línea en un objeto `Videojuego`.
+4. Guarda todos los videojuegos en un `ArrayList`.
+5. Calcula:
+   - total de videojuegos
+   - total de horas jugadas
+   - media de horas
+   - videojuego con más horas
+6. Genera el fichero `resumen_videojuegos.txt` con los resultados.
+7. Añade un mensaje al fichero `log_videojuegos.txt` sin borrar lo anterior.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Tecnologías usadas
 
-## Dependency Management
+- `Files.readAllLines()`
+- `Files.writeString()`
+- `ArrayList`
+- `StandardOpenOption.APPEND`
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Notas
+
+El CSV está dentro de la carpeta `data`, por lo que las rutas se ajustan a esa ubicación.
