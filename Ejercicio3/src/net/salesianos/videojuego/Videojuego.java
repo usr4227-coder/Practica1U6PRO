@@ -15,4 +15,10 @@ public class Videojuego {
     public String getTitulo() { return titulo; }
     public String getGenero() { return genero; }
     public int getHorasJugadas() { return horasJugadas; }
+
+    
+    @Override
+    public String toString() {
+        return titulo + " - " + genero + " - " + horasJugadas + "h";
+    }
 }
