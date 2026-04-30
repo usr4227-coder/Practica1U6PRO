@@ -1,0 +1,4 @@
+Total videojuegos: 5
+Total horas: 287
+Media horas: 57.4
+Más jugado: Minecraft (120h)
