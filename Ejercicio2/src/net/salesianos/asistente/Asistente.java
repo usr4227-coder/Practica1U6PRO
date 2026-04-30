@@ -35,4 +35,23 @@ public class Asistente {
         this.grupo = grupo;
     }
 
+    @Override
+    public String toString() {
+        return dni + " - " + nombre + " - " + grupo;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (!(obj instanceof Asistente))
+            return false;
+        Asistente other = (Asistente) obj;
+        return this.dni.equals(other.dni);
+    }
+
+    @Override
+    public int hashCode() {
+        return dni.hashCode();
+    }
 }
