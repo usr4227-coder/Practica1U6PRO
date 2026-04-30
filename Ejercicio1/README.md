@@ -1,5 +1,6 @@
 # Ejercicio 1 – Gestión de reparaciones (Queue y Stack)
-  
+
+Este ejercicio forma parte de la práctica UD6 T1 PRO.  
 El objetivo es simular la gestión de reparaciones usando una **cola** para las solicitudes y una **pila** para el historial.
 
 ## Contenido del proyecto
@@ -23,5 +24,3 @@ El objetivo es simular la gestión de reparaciones usando una **cola** para las 
 - `Stack`
 - Recorridos con `for-each`
 
-## Notas
-El ejercicio sigue exactamente lo que pide el PDF, sin añadir nada extra.
