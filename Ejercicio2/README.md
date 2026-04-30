@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # Ejercicio 2 – Gestión de asistentes (HashSet y HashMap)
 
 El objetivo es gestionar asistentes evitando duplicados y agrupándolos por grupo.
@@ -29,4 +27,5 @@ El objetivo es gestionar asistentes evitando duplicados y agrupándolos por grup
 - `HashSet`
 - `HashMap`
 - `equals()` y `hashCode()` basados en el DNI
->>>>>>> ejercicio2
+
+
