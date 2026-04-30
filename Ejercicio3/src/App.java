@@ -36,8 +36,7 @@ public class App {
 
         double media = total > 0 ? (double) totalHoras / total : 0;
 
-        String resumen =
-                "Total videojuegos: " + total + "\n" +
+        String resumen = "Total videojuegos: " + total + "\n" +
                 "Total horas: " + totalHoras + "\n" +
                 "Media horas: " + media + "\n" +
                 "Más jugado: " + max.getTitulo() + " (" + max.getHorasJugadas() + "h)";
@@ -48,7 +47,6 @@ public class App {
                 Path.of(rutaLog),
                 "Ejecución correcta\n",
                 StandardOpenOption.CREATE,
-                StandardOpenOption.APPEND
-        );
+                StandardOpenOption.APPEND);
     }
 }
