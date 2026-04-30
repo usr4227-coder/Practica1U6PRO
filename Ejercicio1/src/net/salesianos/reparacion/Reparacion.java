@@ -23,4 +23,16 @@ public class Reparacion {
     public void setDescripcion(String descripcion) { this.descripcion = descripcion; }
     public void setUrgente(boolean urgente) { this.urgente = urgente; }
 
+    @Override
+    public String toString() {
+        return codigo + " - " + cliente + " - " + descripcion + " - urgente: " + urgente;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (!(obj instanceof Reparacion)) return false;
+        Reparacion other = (Reparacion) obj;
+        return this.codigo.equals(other.codigo);
+    }
 }
